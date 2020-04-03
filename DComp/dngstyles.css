@@ -129,7 +129,7 @@ body {
 }
 .bg-image{
 	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("bgFirst.jpg");
-	height: 90vh;
+	height: 120vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
