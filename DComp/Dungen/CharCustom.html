@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/cL1d3Bi.png"/>
+		<title>Clothing shop</title>
+		<link href="https://fonts.googleapis.com/css2?family=Crushed&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="section-clothes-shop">
+            <h1 id="text-clothes-shop">Dungeon Companion</h1>
+            <h1 id="text-clothes-shop">Character Customization</h1>
+            <table>
+                <!-- Cloth item in the head -->
+                <tr>
+                    <td><img id="btn-next-head" class="btn-arrow btn-arrow-left" src="./images/arrow-left.svg" onclick="headLeft()"/></td>
+                    <td><img id="item-head" class="img-item" src="images/pea-0.png" /></td>
+                    <td><img id="btn-previous-head" class="btn-arrow btn-arrow-right" src="./images/arrow-right.svg" onclick="headRight()"/></td>
+                </tr>
+                <!-- Cloth item in the body -->
+                <tr>
+                    <td><img id="btn-next-body" class="btn-arrow btn-arrow-left" src="./images/arrow-left.svg" onclick="bodyLeft()"/></td>
+                    <td><img id="item-body" class="img-item" src="images/keha-0.png" /></td>
+                    <td><img id="btn-previous-head" class="btn-arrow btn-arrow-right" src="./images/arrow-right.svg" onclick="bodyRight()"/></td>
+                </tr>
+                <!-- Cloth item in the legs -->
+                <tr>
+                    <td><img id="btn-next-legs" class="btn-arrow btn-arrow-left" src="./images/arrow-left.svg" onclick="legLeft()"/></td>
+                    <td><img id="item-legs" class="img-item" src="images/puksid-0.png" /></td>
+                    <td><img id="btn-previous-legs" class="btn-arrow btn-arrow-right" src="./images/arrow-right.svg" onclick="legRight()"/></td>
+                </tr>
+				
+				<tr>
+                    <td><img id="btn-next-jah" class="btn-arrow btn-arrow-left" src="./images/arrow-left.svg" onclick="jahLeft()"/></td>
+                    <td><img id="item-jah" class="img-item" src="images/jalg-0.png" /></td>
+                    <td><img id="btn-previous-jah" class="btn-arrow btn-arrow-right" src="./images/arrow-right.svg" onclick="jahRight()"/></td>
+                </tr>                      
+            </table>
+            <button type="button" id="btn-randomize" onclick="random()">Randomize</button>
+        </div>
+        
+        <script>
+        
+        // These are the max amount of items per section (don't change it! just use it).
+        const itemsCountHead = 3;
+        const itemsCountBody = 3;
+        const itemsCountLegs = 3;
+        const itemsCountJah = 3;
+        // These ones will hold the current item per section.
+        var currentItemHead = 0;
+        var currentItemBody = 0;
+        var currentItemLegs = 0;  
+		var currentItemJah = 0;
+            
+        // Define your functions to update cloth items per section.
+			function headLeft () {
+				if (currentItemHead <= itemsCountHead && currentItemHead > 0) {
+				console.log("Head Left");
+				currentItemHead--;
+				console.log("Item number " + currentItemHead);
+			} else if (currentItemHead == 0) {
+				console.log("Head Left");
+				currentItemHead = itemsCountHead;
+				console.log("Item number " + currentItemHead);
+			}
+				document.getElementById("item-head").src = "images/pea-" + currentItemHead + ".png";
+			}
+			
+			function headRight () {
+				if (currentItemHead < itemsCountHead) {
+				console.log("Head Right");
+				currentItemHead++;
+				console.log("Item number " + currentItemHead);
+					
+			} else if (currentItemHead == itemsCountHead) {
+				console.log("Head Right");
+				currentItemHead = 0;
+				console.log("Item number " + currentItemHead);
+			}
+				document.getElementById("item-head").src = "images/pea-" + currentItemHead + ".png";
+			}
+			
+				
+			function bodyLeft () {
+				if (currentItemBody <= itemsCountBody && currentItemBody > 0) {
+					console.log("Body Left");
+					currentItemBody--;
+					console.log("Item number " + currentItemBody);
+				} else if (currentItemBody == 0) {
+						console.log("Body Left");
+						currentItemBody = itemsCountBody;
+						console.log("Item number " + currentItemBody);
+				}
+				document.getElementById("item-body").src = "images/keha-" + currentItemBody + ".png";
+				}
+						
+						
+						
+						function bodyRight () {
+							if (currentItemBody < itemsCountBody) {
+							console.log("Body Right");
+							currentItemBody++;
+							console.log("Item number " + currentItemBody);
+								
+							} else if (currentItemBody == itemsCountBody) {
+								console.log("Body Right");
+								currentItemBody = 0;
+								console.log("Item number " + currentItemBody);
+							}
+								document.getElementById("item-body").src = "images/keha-" + currentItemBody + ".png";
+							}
+							
+								function legLeft () {
+									if (currentItemLegs <= itemsCountLegs && currentItemLegs > 0) {
+										console.log("Legs Left");
+										currentItemLegs--;
+										console.log("Item number " + currentItemLegs);
+										} else if (currentItemLegs == 0) {
+										console.log("Legs Left");
+										currentItemLegs = itemsCountLegs;
+										console.log("Item number " + currentItemLegs);
+									}
+										document.getElementById("item-legs").src = "images/puksid-" + currentItemLegs + ".png";
+									}
+									
+									
+									
+									function legRight () {
+										if (currentItemLegs < itemsCountLegs) {
+										console.log("Legs Right");
+										currentItemLegs++;
+										console.log("Item number " + currentItemLegs);
+											
+										} else if (currentItemLegs == itemsCountLegs) {
+											console.log("Legs Right");
+											currentItemLegs = 0;
+											console.log("Item number " + currentItemLegs);
+										}
+											document.getElementById("item-legs").src = "images/puksid-" + currentItemLegs + ".png";
+										}
+										
+										
+										function jahLeft () {
+									if (currentItemJah <= itemsCountJah && currentItemJah > 0) {
+										currentItemJah--;
+										} else if (currentItemJah == 0) {
+										currentItemJah = itemsCountJah;
+									}
+										document.getElementById("item-jah").src = "images/jalg-" + currentItemJah + ".png";
+									}
+									
+									
+									
+									function jahRight () {
+										if (currentItemJah < itemsCountJah) {
+										currentItemJah++;
+										} else if (currentItemJah == itemsCountJah) {
+											currentItemJah = 0;
+										}
+											document.getElementById("item-jah").src = "images/jalg-" + currentItemJah + ".png";
+										}
+										
+										
+				function random() {
+					var itemsCountHeadR = itemsCountHead + 1;
+					var itemsCountBodyR = itemsCountBody + 1;
+					var itemsCountLegsR = itemsCountLegs + 1;
+					var itemsCountJahR = itemsCountJah + 1;
+					
+					currentItemHead = Math.floor(Math.random() * itemsCountHeadR);
+					console.log(currentItemHead);
+					document.getElementById("item-head").src = "images/pea-" + currentItemHead + ".png";
+					
+					currentItemBody = Math.floor(Math.random() * itemsCountBodyR);
+					console.log(currentItemBody);
+					document.getElementById("item-body").src = "images/keha-" + currentItemBody + ".png";
+					
+					currentItemLegs = Math.floor(Math.random() * itemsCountLegsR);
+					console.log(currentItemLegs);
+					document.getElementById("item-legs").src = "images/puksid-" + currentItemLegs + ".png";
+					
+					currentItemJah = Math.floor(Math.random() * itemsCountJahR);
+					console.log(currentItemJah);
+					document.getElementById("item-jah").src = "images/jalg-" + currentItemJah + ".png";
+					
+					
+					
+				
+				}
+        // Remember that document.getElementById("some-id").src = "./some-folder/some-file-name.png" can change the source image;
+            
+        // Remember that you can create a string appending two other ones.
+        // var index = 0;
+        // var filename = "something-" + index + ".png";
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+	text-align: center;
+	font-family: 'Crushed', cursive;
+	margin: 0% 20% 0 20%;
+	color: white;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdn.discordapp.com/attachments/440206910881398785/695659532013011105/background.png");
+	display: flex;
+	justify-content: center;
+}
+
+.btn-arrow {
+    width: 90%;
+}
+
+.btn-arrow-right {
+    float: left;
+}
+
+.btn-arrow-left {
+    float: right;
+}
+
+.img-item {
+    width: 30%;
+    border-radius: 20%;
+}
+
+#section-clothes-shop {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 20px;
+	padding: 20px;
+	width: 80%;
+}
+
+#btn-randomize {
+    background: #0f2443;    
+    padding: 20px;
+	font-size: 30px;
+	border-radius: 20px;
+	color: white;
+	font-family: 'Crushed', cursive;
+	text-decoration: none;
+	border: none;
+}
+h1 {
+	color: white;
+	margin: 5px;
+	
+}
+td {
+	padding: 5px;
+}
