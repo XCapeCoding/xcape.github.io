@@ -359,7 +359,7 @@ body {
 
 
 #mc_embed_signup {
-	background-color: black;
+	background: transparent;
 	height: 230px;
 	display: flex;
 	justify-content: center;
