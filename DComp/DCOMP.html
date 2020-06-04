@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>DungeonCompanion</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css2?family=Crushed&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" type="image/png" href="https://i.imgur.com/cL1d3Bi.png"/>
 		<link rel="stylesheet" href="dngstyles.css"/> 
@@ -21,7 +22,25 @@
 				<p>|</p>
 				<a href="#mc_embed_signup">Newsletter & Early Access</a>
 			</div>
+			<div class="menu-icon" onclick="openMenu()">
+				<div class="menu-container">
+					<div class="line" id="line1"></div>
+					<div class="line" id="line2"></div>
+					<div class="line" id="line3"></div>
+				</div>
+			</div>
 	</div>
+</div>
+
+
+<div class="phone-menu">
+	<a href="#topOfPage">Description</a>
+	<hr>
+	<a href="https://www.figma.com/file/ACzJGo0HoilZZmuLxP0arB/Dungeon-Companion?node-id=0%3A1">Prototype</a>
+	<hr>
+	<a target="_blank" href="Dungen/CharCustom.html">Character Customization</a>
+	<hr>
+	<a href="#mc_embed_signup">Newsletter & Early Access</a>
 </div>
 	
 			<div class="bg-image">
@@ -128,20 +147,20 @@
 				<h4><a href="#topOfPage">About Dungeon Companion</a></h4>
 				<img src="mini.png"/>						
 					<div class="socialMedia">
-						<img src="Icons/facebook.png"/>
-						<img src="Icons/instagram.png"/>
-						<img src="Icons/youtube.png"/>
-						<img src="Icons/twitter.png"/>
-						<img src="Icons/discord.png"/>
+						<img src="icons/facebook.png"/>
+						<img src="icons/instagram.png"/>
+						<img src="icons/youtube.png"/>
+						<img src="icons/twitter.png"/>
+						<img src="icons/discord.png"/>
 					</div>
 				<p>©DungeonInc 2020</p>
 							<div class="pegi">
 								<a href="https://pegi.info">
-								<img src="Icons/euw-pegi.png"/></a>
-								<img src="Icons/ingamePurch.png"/>
-								<img src="Icons/pegi-violence.png"/>
+								<img src="icons/euw-pegi.png"/></a>
+								<img src="icons/ingamePurch.png"/>
+								<img src="icons/pegi-violence.png"/>
 								<a href="https://usk.de/en">
-								<img src="Icons/euw-usk-12.png"/></a>
+								<img src="icons/euw-usk-12.png"/></a>
 							</div>
 			</div>
 		
@@ -189,6 +208,14 @@
 			$("#thank").show();
 		});
 
+
+		function openMenu () {
+			$("#line1").toggleClass("active");
+			$("#line2").toggleClass("active");
+			$("#line3").toggleClass("active");
+
+			$(".phone-menu").toggleClass("active");
+		}
 
 		
 	
