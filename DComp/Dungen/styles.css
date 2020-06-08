@@ -11,7 +11,7 @@ body {
 
 #text-clothes-shop {
 	font-size: 38px;
-	padding-bottom: 1.5em;
+	padding-bottom: 0.75em;
 }
 
 
@@ -91,6 +91,40 @@ td {
 }
 
 @media only screen and (max-width: 850px) {
+	#logo {
+		height: 65px;
+		padding-bottom: 10px;
+	}
+
+	#text-clothes-shop {
+		font-size: 36px;
+		padding-bottom: 1em;
+	}
+
+	.img-item {
+		width: 55%;
+	}
+
+	.btn-arrow-left {
+		width: 100%;
+	}
+
+	.btn-arrow-right {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#logo {
+		height: 50px;
+		padding-bottom: 5px;
+	}
+
+	#text-clothes-shop {
+		font-size: 32px;
+		padding-bottom: 0.5em;
+	}
+
 	.img-item {
 		width: 75%;
 	}
@@ -101,5 +135,10 @@ td {
 
 	.btn-arrow-right {
 		width: 200%;
+	}
+
+	#btn-randomize {
+		padding: 15px;
+		font-size: 22px;
 	}
 }
