@@ -9,6 +9,12 @@ body {
 	justify-content: center;
 }
 
+#text-clothes-shop {
+	font-size: 38px;
+	padding-bottom: 1.5em;
+}
+
+
 .btn-arrow {
     width: 90%;
 }
@@ -32,8 +38,16 @@ body {
 }
 
 .img-item {
-    width: 30%;
+    width: 33%;
     border-radius: 20%;
+}
+
+.btn-arrow-left {
+	width: 70%;
+}
+
+.btn-arrow-right {
+	width: 70%;
 }
 
 #section-clothes-shop {
@@ -69,4 +83,23 @@ h1 {
 }
 td {
 	padding: 5px;
+}
+
+#logo {
+	height: 75px;
+	padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 850px) {
+	.img-item {
+		width: 75%;
+	}
+
+	.btn-arrow-left {
+		width: 200%;
+	}
+
+	.btn-arrow-right {
+		width: 200%;
+	}
 }
