@@ -114,6 +114,30 @@ td {
 	}
 }
 
+@media only screen and (max-width: 767px) {
+	#logo {
+		height: 65px;
+		padding-bottom: 10px;
+	}
+
+	#text-clothes-shop {
+		font-size: 36px;
+		padding-bottom: 1em;
+	}
+
+	.img-item {
+		width: 55%;
+	}
+
+	.btn-arrow-left {
+		width: 100%;
+	}
+
+	.btn-arrow-right {
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	#logo {
 		height: 50px;
