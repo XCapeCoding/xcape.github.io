@@ -149,6 +149,11 @@ td {
 		padding-bottom: 0.5em;
 	}
 
+	#table {
+		padding-top: 2em;
+	}
+
+
 	.img-item {
 		width: 75%;
 	}
